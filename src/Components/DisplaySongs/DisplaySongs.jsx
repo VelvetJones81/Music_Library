@@ -6,13 +6,10 @@ const DisplaySongs = (props) => {
         let response = await axios.patch(`http://127.0.0.1:8000/api/music/${songPk}/`);
         if (response.status === 202) await props.getAllSongs();
     }
-}
-
     async function deleteSong(songPk) {
         let response = await axios.delete(`http://127.0.0.1:8000/api/music/${songPk}/`)
         if (response.status === 200) await props.getAllSongs()
     }
-
     return (
         <div>
             <h2>Music Library!</h2>
@@ -28,7 +25,8 @@ const DisplaySongs = (props) => {
                 </tbody>
             </table>
         </div>
-    )
+    );
+};
         
-
+export default DisplaySongs;
     
