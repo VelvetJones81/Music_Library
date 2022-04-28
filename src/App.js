@@ -1,23 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <h3>With the 3rd pick in the 2022 NFL Draft, the Houston Texans select: Derek Stingley Jr. Cornerback LSU!</h3>
+        <h3>With the 9th pick in the 2022 NFL Draft, the Houston Texans select: Garrett Wilson, Wide Reciever, Ohio State!</h3>
     </div>
   );
 }
